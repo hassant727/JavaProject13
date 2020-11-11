@@ -13,6 +13,6 @@
         <Button text="Start" onAction="#startRayTrace"/>
     </HBox>
     <ImageView fx:id="renderedImage" fitWidth="800" fitHeight="600">
-        <Image url="resources/Placeholder-01.png" />
+        <Image url="@resources/Placeholder-01.png" />
     </ImageView>
 </GridPane>
