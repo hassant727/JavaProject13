@@ -13,7 +13,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("render.fxml"));
         //Parent root = loader.load(getClass().getResource("render.fxml").openStream());
         Parent root = loader.load();
-        Controller controller = (Controller) loader.getController();
+        loader.getController();
 
         primaryStage.setTitle("Simple Ray Tracing");
         primaryStage.setScene(new Scene(root, 860, 640));
