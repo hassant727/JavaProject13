@@ -1,19 +1,17 @@
 package cs3318.raytracing;
 
-import javafx.event.ActionEvent;
+//import javafx.event.ActionEvent;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
+//import javafx.stage.Stage;
 
 
 public class Controller {
     public ImageView renderedImage;
-    private Stage stage;
     private Driver sceneToRender;
     boolean finished = false;
 
-    public void setStage(Stage stage) {
-        this.stage = stage;
-    }
+//    public void setStage() {
+//    }
 
     public void run() {
         long time = System.currentTimeMillis();
@@ -29,7 +27,7 @@ public class Controller {
     }
 
 
-    public void startRayTrace(ActionEvent actionEvent) {
+    public void startRayTrace() {
         sceneToRender = new Driver((int) renderedImage.getFitWidth(),
                                    (int) renderedImage.getFitHeight(),
                 "resources/SceneToRender.txt");
